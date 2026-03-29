@@ -107,7 +107,7 @@ export default function HomePage() {
               { name: "BOM", price: "₹111.00", img: "https://images.unsplash.com/photo-1773956268887-9f3f6f54b6fc?q=80&w=600&auto=format&fit=crop" },
               { name: "Datra", price: "₹33.00", img: "https://images.unsplash.com/photo-1773956958736-b529339a7d5a?q=80&w=600&auto=format&fit=crop" },
               { name: "Kuli", price: "₹51.00", img: "https://images.unsplash.com/photo-1773956840856-d7f307a0d07a?q=80&w=600&auto=format&fit=crop" },
-              { name: "Fresh Red Onion", price: "₹23.00", img: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=600&auto=format&fit=crop" },
+              { name: "Fresh Red Onion", price: "₹23.00", img: "https://images.unsplash.com/photo-1760192499223-0dc15a4ad3c5?q=80&w=600&auto=format&fit=crop" },
               { name: "Fresh Indian Red Onion", price: "₹8.00", img: "https://images.unsplash.com/photo-1683355739329-cea18ba93f02?q=80&w=600&auto=format&fit=crop" },
             ].map((p) => (
               <div key={p.name} className="group relative overflow-hidden aspect-[3/4] bg-gray-100">
