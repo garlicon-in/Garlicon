@@ -16,7 +16,7 @@ export default function ContactPage() {
           <div className="space-y-8 md:space-y-12">
             <div>
               <h3 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-400 mb-2 md:mb-4">Location</h3>
-              <p className="text-lg md:text-xl font-light text-gray-900">Coimbatore, Tamil Nadu, India</p>
+              <p className="text-lg md:text-xl font-light text-gray-900">Bengaluru, Karnataka, India</p>
             </div>
             <div>
               <h3 className="text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase text-gray-400 mb-2 md:mb-4">Contact</h3>
