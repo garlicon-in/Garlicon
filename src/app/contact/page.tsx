@@ -30,7 +30,7 @@ export default function ContactPage() {
           </div>
           
           <div className="pt-8 md:pt-12 flex space-x-8 md:space-x-12 opacity-40">
-            <span className="text-[10px] md:text-xs tracking-[0.2em] uppercase cursor-pointer hover:opacity-100 transition-opacity">Instagram</span>
+            <span className="text-[10px] md:text-xs tracking-[0.2em] uppercase cursor-pointer hover:opacity-100 transition-opacity">Insta</span>
 
           </div>
         </div>
