@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
 
   try {
     await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>', // change after verifying your domain
+      from: 'Garlicon Contact <contact@garlicon.in>', // change after verifying your domain
       to: 'garliconandco@gmail.com',
       subject: `New Contact Form Message from ${name}`,
       html: `
