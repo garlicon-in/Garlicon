@@ -11,8 +11,11 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    await resend.emails.send({
-      from: 'Garlicon Contact <contact@garlicon.in>', // change after verifying your domain
+    console.log('API Key exists:', !!process.env.RESEND_API_KEY);
+    console.log('Sending to: garliconandco@gmail.com');
+
+    const { data, error } = await resend.emails.send({
+      from: 'Garlicon Contact <contact@garlicon.in>',
       to: 'garliconandco@gmail.com',
       subject: `New Contact Form Message from ${name}`,
       html: `
@@ -25,8 +28,16 @@ export async function POST(req: NextRequest) {
       replyTo: email,
     });
 
+    if (error) {
+      console.error('Resend error object:', JSON.stringify(error));
+      return NextResponse.json({ error }, { status: 500 });
+    }
+
+    console.log('Success! Email ID:', data?.id);
     return NextResponse.json({ success: true });
+
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to send email.' }, { status: 500 });
+    console.error('Catch error:', JSON.stringify(error));
+    return NextResponse.json({ error: String(error) }, { status: 500 });
   }
 }
