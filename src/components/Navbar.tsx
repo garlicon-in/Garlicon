@@ -77,12 +77,16 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`md:hidden absolute top-full left-0 w-full transition-all duration-300 ${
-          isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`md:hidden absolute top-full left-0 w-full transition-all duration-300 ease-out ${
+          isMenuOpen
+            ? "opacity-100 visible translate-y-0 pointer-events-auto"
+            : "opacity-0 invisible -translate-y-2 pointer-events-none"
         }`}
       >
         <div
-          className={`mx-4 mb-3 rounded border px-4 py-3 flex flex-col gap-3 ${
+          className={`mx-4 mb-3 rounded border px-4 py-3 flex flex-col gap-3 transition-transform duration-300 ease-out ${
+            isMenuOpen ? "scale-100" : "scale-[0.98]"
+          } ${
             isScrolled
               ? "bg-white/95 border-gray-200 shadow-sm"
               : "bg-black/55 border-white/20 backdrop-blur-md"
