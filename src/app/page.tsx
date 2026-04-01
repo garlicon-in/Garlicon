@@ -100,7 +100,7 @@ export default function HomePage() {
           </div>
 
           {/* Preview cards row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 md:gap-4 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-7 gap-3 md:gap-4 max-w-6xl mx-auto">
             {[
               { name: "AA", price: "₹36.00", img: "https://images.unsplash.com/photo-1773956538620-04930194fe93?q=80&w=600&auto=format&fit=crop" },
               { name: "AAA", price: "₹44.00", img: "https://images.unsplash.com/photo-1773956379025-d6e7777897c3?q=80&w=600&auto=format&fit=crop" },
